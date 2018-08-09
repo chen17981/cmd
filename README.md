@@ -1,14 +1,22 @@
-# cmd version
+#cmd version
 
 A golang cmd App
 
-Build
+
+Install and Build
 ===
 
+1. Get the source code
 ```
-go build cmd.go
+git clone https://github.com/chen17981/cmd.git
 ```
 
+2. Build the App
+
+```
+cd cmd
+go build cmd.go
+```
 
 Usage
 ===
@@ -20,8 +28,10 @@ Usage
         A string which specifies a list of shopping items. (default "AP1,AP1,OM1,AP1")
   -set string
         A string which specifies a list of product and price paires. (default "CH1,3.11,AP1,6.00,CF1,11.23,MK1,4.75,OM1,3.69")
+```
 
-
+For example,
+```
 ./cmd -set="AP1,6.00,CF1,11.23" -items="AP1,CF1"
 ```
 
@@ -29,9 +39,11 @@ Docker Image Install
 ===
 
 ```
-1. 
+git clone https;//github.com/chen17981/cmd.git
 
-2. docker build -t my-cmd .
+cd cmd
+
+docker build -t my-cmd .
 ```
 
 Run app in Docker
